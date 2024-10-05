@@ -616,7 +616,7 @@
 
     .btn-hero.btn-pink {
         position: relative;
-        z-index: 2;
+        z-index: 9999;
         font-size: 15px;
         line-height: 19.53px;
         letter-spacing: -0.02em;
@@ -633,7 +633,7 @@
     
     .btn-hero.btn-white {
         position: relative;
-        z-index: 2;
+        z-index: 9999;
         font-size: 15px;
         line-height: 19.53px;
         letter-spacing: -0.02em;
