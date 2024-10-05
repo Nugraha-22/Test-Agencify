@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencify</title>
+    <!-- POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-menu">
+          <a href="#">
+            <img
+              src="assets/logo/logo.png"
+              alt="Logo Agencify"
+              class="navbar-brand" />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="dropdown-nav-link" id="button1">
+                Notre expertise
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-menu" id="menu1">
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/magento.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Magento</strong>
+                    <span class="s-menu-link">Le CMS incontournable</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/wordpress.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Wordpress</strong>
+                    <span class="s-menu-link">Le CMS le plus connu</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/laravel.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Laravel</strong>
+                    <span class="s-menu-link">Le Framework compétant</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img src="assets/logo/woo.png" alt="" class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Woo Commerce</strong>
+                    <span class="s-menu-link">Création de commerce</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="dropdown-nav-link" id="button2">
+                Nos services
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-menu" id="menu2">
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/optimisation.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link"
+                      >Optimisation
+                      <span class="s-menu"
+                        ><i class="fa-solid fa-circle-check"></i> La plus
+                        populaire</span
+                      ></strong
+                    >
+                    <span class="s-menu-link">Web</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img src="assets/logo/design.png" alt="" class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Design graphique</strong>
+                    <span class="s-menu-link">Web & print</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/development.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Développement web</strong>
+                    <span class="s-menu-link">Desktop & Mobile</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img src="assets/logo/suivi.png" alt="" class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Suivi & support</strong>
+                    <span class="s-menu-link">Dans votre projet</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <button class="btn-request">
+            <i class="fa-solid fa-arrow-right-long"></i> Demander un devis
+          </button>
+          <button type="button" class="btn-menu" id="btn-bars">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-xmark"></i>
+          </button>
+          <ul class="navbar-nav-menu" id="menu-bars">
+            <li class="nav-item-menu">
+              <a href="" class="nav-link-menu active">Accueil</a>
+              <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item-menu">
+              <button type="button" class="dropdown-nav-link-menu" id="button3">
+                Notre expertise
+                <i class="fa-solid fa-angle-down" id="down1"></i>
+                <i class="fa-solid fa-angle-right" id="right1"></i>
+              </button>
+              <div class="dropdown-menu-s" id="menu3">
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/magento.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Magento</strong>
+                    <span class="s-menu-link">Le CMS incontournable</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/wordpress.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Wordpress</strong>
+                    <span class="s-menu-link">Le CMS le plus connu</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/laravel.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Laravel</strong>
+                    <span class="s-menu-link">Le Framework compétant</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img src="assets/logo/woo.png" alt="" class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Woo Commerce</strong>
+                    <span class="s-menu-link">Création de commerce</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-divider-s-1" id="divider1"></div>
+            </li>
+            <li class="nav-item-menu">
+              <button type="button" class="dropdown-nav-link-menu" id="button4">
+                Nos services
+                <i class="fa-solid fa-angle-down" id="down2"></i>
+                <i class="fa-solid fa-angle-right" id="right2"></i>
+              </button>
+              <div class="dropdown-menu-s" id="menu4">
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/optimisation.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link"
+                      >Optimisation
+                      <span class="s-menu"
+                        ><i class="fa-solid fa-circle-check"></i> La plus
+                        populaire</span
+                      ></strong
+                    >
+                    <span class="s-menu-link">Web</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img src="assets/logo/design.png" alt="" class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Design graphique</strong>
+                    <span class="s-menu-link">Web & print</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img
+                      src="assets/logo/development.png"
+                      alt=""
+                      class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Développement web</strong>
+                    <span class="s-menu-link">Desktop & Mobile</span>
+                  </div>
+                </div>
+                <div class="row-menu">
+                  <div class="col-menu-img">
+                    <img src="assets/logo/suivi.png" alt="" class="menu-img" />
+                  </div>
+                  <div class="col-menu-link">
+                    <strong class="str-menu-link">Suivi & support</strong>
+                    <span class="s-menu-link">Dans votre projet</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-divider-s-2" id="divider2"></div>
+            </li>
+            <li class="nav-item-menu">
+              <a href="" class="nav-link-menu">A propos</a>
+              <div class="dropdown-divider"></div>
+            </li>
+            <li class="nav-item-menu">
+              <a href="" class="nav-link-menu">Contact</a>
+              <div class="dropdown-divider"></div>
+            </li>
+            <button class="btn-request-menu">Demander un devis</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <strong class="str-hero"
+              >Transformez votre vision en réalité numérique !</strong
+            >
+            <h1 class="h-hero">L’agence digital dédié aux entreprises</h1>
+            <p class="p-hero">
+              AGENCIFY est une agence française spécialisée dans le
+              Développement Web, qui identifie vos besoins pour vous accompagner
+              dans la création de votre site sur-mesure et dans vos projets
+              digitaux.
+            </p>
+            <img src="assets/hero/user.png" alt="" class="hero-img-s" />
+            <div class="img-blur-s"></div>
+            <button class="btn-hero btn-pink">Recevoir nos offres</button>
+            <button class="btn-hero btn-white">Prendre un rendez-vous</button>
+          </div>
+          <div class="col">
+            <img src="assets/hero/user.png" alt="" class="hero-img" />
+            <div class="img-blur"></div>
+            <div class="hero-comment">
+              <p class="p-hero-comment">
+                "Une expérience parfaite pour <br />
+                obtenir mon site internet! Le <br />
+                processus a été rapide et efficace.”
+              </p>
+              <div class="row-star">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+              <div class="row-user">
+                <div class="col-user-img">
+                  <img
+                    src="assets/hero/user-comment.jpg"
+                    alt="User Comment"
+                    class="img-comment" />
+                </div>
+                <div class="col-user-comment">
+                  <strong class="str-comment">Thibault Ernout</strong>
+                  <span class="s-comment">Client du 9 Juin 2024</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-comment-node"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero -->
+
+    <!-- JS -->
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
