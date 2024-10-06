@@ -391,6 +391,7 @@
         margin: 0;
         padding: 0;
         width: 390px;
+        min-height: 300vh;
     }
     
 /* Navbar */
@@ -529,10 +530,18 @@
         font-size: 26px;
     }
 
+    .fa-angle-down.active{
+        display: none;
+    }
+
     .fa-angle-right{
         display: none;
         float: right;
         font-size: 26px;
+    }
+
+    .fa-angle-right.active{
+        display: block;
     }
 
     .s-menu {
@@ -571,11 +580,11 @@
     }
 
     .dropdown-divider-s-1.active {
-        display: none;
+        display: block;
     }
 
     .dropdown-divider-s-2.active {
-        display: none;
+        display: block;
     }
 
 /* Hero */
@@ -616,7 +625,7 @@
 
     .btn-hero.btn-pink {
         position: relative;
-        z-index: 9999;
+        z-index: 2;
         font-size: 15px;
         line-height: 19.53px;
         letter-spacing: -0.02em;
@@ -633,7 +642,7 @@
     
     .btn-hero.btn-white {
         position: relative;
-        z-index: 9999;
+        z-index: 2;
         font-size: 15px;
         line-height: 19.53px;
         letter-spacing: -0.02em;
