@@ -21,8 +21,8 @@ var angelRight1 = document.getElementById("right1");
 var angelDown2 = document.getElementById("down2");
 var angelRight2 = document.getElementById("right2");
 
-var divider1 = document.querySelector(".dropdown-divider-s-1");
-var divider2 = document.querySelector(".dropdown-divider-s-2");
+var divider1 = document.getElementById("divider1");
+var divider2 = document.getElementById("divider2");
 
 btnMenuBars.addEventListener("click", function () {
   NavbarNavMenu.classList.toggle("active");
@@ -49,34 +49,23 @@ btnDropdownNavLink2.addEventListener("click", function () {
 btnDropdownNavLink3.addEventListener("click", function () {
   dropdownMenu3.classList.toggle("active");
   dropdownMenu4.classList.remove("active");
-  dropdownMenu4.classList.remove("active");
-  divider1.classList.toggle("active");
-  divider2.classList.toggle("active");
+  divider1.classList.add("active");
+  divider2.classList.add("active");
 
-  if (angelDown1.style.display === "none") {
-    angelDown1.style.display = "block";
-    angelRight1.style.display = "none";
-  } else {
-    angelDown2.style.display = "block";
-    angelRight2.style.display = "none";
-    angelDown1.style.display = "none";
-    angelRight1.style.display = "block";
-  }
+  angelRight1.classList.toggle("active");
+  angelDown1.classList.toggle("active");
+  angelRight2.classList.remove("active");
+  angelDown2.classList.remove("active");
 });
 
 btnDropdownNavLink4.addEventListener("click", function () {
   dropdownMenu4.classList.toggle("active");
   dropdownMenu3.classList.remove("active");
-  divider1.classList.toggle("active");
-  divider2.classList.toggle("active");
+  divider1.classList.add("active");
+  divider2.classList.add("active");
 
-  if (angelDown2.style.display === "none") {
-    angelDown2.style.display = "block";
-    angelRight2.style.display = "none";
-  } else {
-    angelDown1.style.display = "block";
-    angelRight1.style.display = "none";
-    angelDown2.style.display = "none";
-    angelRight2.style.display = "block";
-  }
+  angelRight2.classList.toggle("active");
+  angelDown2.classList.toggle("active");
+  angelRight1.classList.remove("active");
+  angelDown1.classList.remove("active");
 });
