@@ -49,7 +49,9 @@ btnDropdownNavLink2.addEventListener("click", function () {
 btnDropdownNavLink3.addEventListener("click", function () {
   dropdownMenu3.classList.toggle("active");
   dropdownMenu4.classList.remove("active");
+  dropdownMenu4.classList.remove("active");
   divider1.classList.toggle("active");
+  divider2.classList.toggle("active");
 
   if (angelDown1.style.display === "none") {
     angelDown1.style.display = "block";
@@ -65,6 +67,7 @@ btnDropdownNavLink3.addEventListener("click", function () {
 btnDropdownNavLink4.addEventListener("click", function () {
   dropdownMenu4.classList.toggle("active");
   dropdownMenu3.classList.remove("active");
+  divider1.classList.toggle("active");
   divider2.classList.toggle("active");
 
   if (angelDown2.style.display === "none") {
